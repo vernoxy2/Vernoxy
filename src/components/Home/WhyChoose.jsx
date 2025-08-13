@@ -34,7 +34,7 @@ const WhyChoose = () => {
         </span>{" "}
         Us
       </PrimaryHeading>
-      <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap- gap-y-12">
+      <div className="container grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap- gap-y-12">
         {services.map((service, index) => (
           <div
             key={index}

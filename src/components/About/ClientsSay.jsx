@@ -39,14 +39,14 @@ const ClientsSay = () => {
   return (
     <section className="py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>What Our Clients Say</PrimaryHeading>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-16">
         {ClintData.map((client) => (
           <div
             key={client.id}
-            className="flex flex-row items-center bg-gredient-to-r from-[#1168B5] to-[#4ED5E2] bg-clip-border p-3 rounded-lg hover:shadow-lg transition border "
+            className="flex flex-row items-center bg-gredient-to-r from-[#1168B5] to-[#4ED5E2] bg-clip-border p-3 hover:scale-105 duration-300 rounded-lg hover:shadow-lg transition border "
           >
             {/* Left Side - Text */}
-            <div className="flex-1 flex flex-col justify-center gap-2 text-left font-medium">
+            <div className="flex-1 flex flex-col justify-center gap-0.5 text-left font-medium">
               {/* Rating */}
               <div className="flex text-yellow-500">
                 {Array.from({ length: 5 }).map((_, index) =>
@@ -58,11 +58,11 @@ const ClientsSay = () => {
                 )}
               </div>
               {/* Name */}
-              <h3 className="text-2xl font-black">{client.name}</h3>
+              <h3 className="md:text-2xl font-black">{client.name}</h3>
               {/* Post */}
-              <p className="text-gray-500 text-lg">{client.post}</p>
+              <p className="text-gray-500 text-sm sm:text-lg">{client.post}</p>
               {/* Message */}
-              <p className="text-lg leading-snug">{client.message}</p>
+              <p className="text-sm sm:text-lg leading-snug">{client.message}</p>
             </div>
 
             {/* Right Side - Image */}
