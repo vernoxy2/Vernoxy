@@ -1,5 +1,5 @@
 import React from "react";
-import TogetherImg from "../../assets/ContactPageImgs/together.webp";
+import TogetherImg from "../../assets/ContactPageImgs/Together.webp";
 import PrimaryHeading from "../PrimaryCompo/PrimaryHeading";
 import { MdOutlineAddIcCall, MdOutlineEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
