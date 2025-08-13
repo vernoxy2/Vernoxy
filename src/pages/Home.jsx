@@ -19,7 +19,7 @@ const Home = () => {
         <Services/>
         <ProjectOverview/>
         <WhyChoose/>
-        <Team/>
+        {/* <Team/> */}
         <Clients/>
         <FAQ/>
         <GetaQuote/>

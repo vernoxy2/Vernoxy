@@ -27,7 +27,7 @@ const services = [
 
 const WhyChoose = () => {
   return (
-    <section className="py-10">
+    <section className="py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>
         <span className="font-bold bg-gradient-to-r from-[#1168B5] to-[#4ED5E2] bg-clip-text text-transparent">
           Why Choose
@@ -40,7 +40,7 @@ const WhyChoose = () => {
             key={index}
             className="flex flex-col gap-4 bg-white justify-center items-center text-center p-4 hover:shadow-lg transition"
           >
-            {service.img}
+            <div className="bg-primary-gradient p-5 rounded-full text-white">{service.img}</div>
             <h3 className="text-2xl font-medium">{service.title}</h3>
 
             <p className="text-lg leading-snug">{service.desc}</p>
