@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import AboutHeader from "../components/About/AboutHeader";
+import WeAre from "../components/About/WeAre";
+import Goals from "../components/About/goals";
+import ClientsSay from "../components/About/ClientsSay";
 
 const About = () => {
   return (
-    <div className="p-4">Welcome to about Page</div>
-  )
-}
+    <div>
+      <AboutHeader />
+      <WeAre/>  
+      <Goals/>
+      <ClientsSay/>
+    </div>
+  );
+};
 
-export default About
+export default About;

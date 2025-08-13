@@ -13,7 +13,7 @@ import GetaQuote from '../components/Home/GetaQuote'
 const Home = () => {
   return (
     <>
-      <div className='py-10'>
+      <div className=''>
         <HomeHader/>
         <AboutUs/>
         <Services/>

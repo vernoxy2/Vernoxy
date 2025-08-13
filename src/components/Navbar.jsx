@@ -9,23 +9,23 @@ const Navbar = () => {
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/about", label: "About Us" },
-    { to: "/services", label: "Services" },
+    { to: "/services", label: "Service" },
     { to: "/contact", label: "Contact Us" },
   ];
 
   return (
-    <nav className="w-full bg-transparent py-4">
-      <div className="max-w-7xl mx-auto flex items-center px-6">
+    <nav className=" py-4">
+      <div className=" flex items-center justify-between container">
         {/* Logo */}
         <div className="flex-shrink-0">
           <img src={logo} alt="Logo" className="h-auto w-auto" />
         </div>
 
         {/* Nav + Search (Desktop) */}
-        <div className="hidden lg:flex items-center justify-center ml-8 flex-grow">
-          <div className="flex items-center bg-[#232323] rounded-full px-2 py-1 gap-2">
+        <div className="hidden lg:flex items-center justify-center  w-full">
+          <div className="flex  items-center justify-around bg-[#232323] rounded-full px-2 py-1 gap-x-6">
             {/* Nav Links */}
-            <div className="flex gap-2">
+            <div className="flex gap-2 px-6">
               {navLinks.map(({ to, label }) => (
                 <NavLink
                   key={to}
@@ -43,17 +43,25 @@ const Navbar = () => {
               ))}
             </div>
             {/* Search Bar */}
-            <div className="flex items-center bg-[#232323] rounded-full ml-2">
+            <div className="flex items-center bg-[#232323] rounded-full m gap-1">
               <input
                 type="text"
                 placeholder="Search"
                 className="bg-transparent outline-none text-sm text-black bg-white rounded-full px-3 py-1 w-28 md:w-40"
               />
-              <button className="text-white px-2 ">
+              <button className="text-black bg-white rounded-full p-1.5 ">
                 <FaSearch />
               </button>
             </div>
           </div>
+        </div>
+
+        <div className="flex-shrink-0">
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-auto w-auto hidden xl:block opacity-0"
+          />
         </div>
 
         {/* Hamburger for mobile */}

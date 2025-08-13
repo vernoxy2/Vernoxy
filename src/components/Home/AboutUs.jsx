@@ -16,14 +16,14 @@ const AboutUs = () => {
             Digital Experiences That Inspire
           </h1>
 
-          <p className="md:text-lg leading-snug">
+          <p className="md:text-lg leading-snug tracking-tight">
             At Vernoxy, we specialize in empowering brands through innovative,
             data-driven, and creative solutions. Our mission is to transform
             ideas into impactful strategies that drive growth, engagement, and
             long-term success. With a focus on design, analytics, and modern
             digital tools, we help businesses stand out in competitive markets.
           </p>
-          <p className="md:text-lg leading-snug">
+          <p className="md:text-lg leading-snug tracking-tight">
             Our team of experts blends creativity with cutting-edge technology
             to deliver customized branding, marketing, and business solutions.
             Whether you're a startup or an established brand, we’re here to turn
