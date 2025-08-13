@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Together from "../components/Contact/Together";
+import Address from "../components/Contact/Address";
+import ContactForm from "../components/Contact/ContactForm";
+import ContactHeader from "../components/Contact/AboutHeader";
 
 const Contact = () => {
   return (
-    <div className="p-4">Welcome to Contact Page</div>
-  )
-}
+    <div>
+      <ContactHeader/>
+      <Together />
+      <Address />
+      <ContactForm />
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
