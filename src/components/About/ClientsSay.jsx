@@ -39,10 +39,11 @@ const ClientsSay = () => {
   return (
     <section className="py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>What Our Clients Say</PrimaryHeading>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-16">
+      <div className="container grid grid-cols-1  xl:grid-cols-3 gap-6 gap-y-16">
         {ClintData.map((client) => (
           <div
             key={client.id}
+            data-aos="zoom-in" data-aos-delay={client.id * 200}
             className="flex flex-row items-center bg-gredient-to-r from-[#1168B5] to-[#4ED5E2] bg-clip-border p-3 hover:scale-105 duration-300 rounded-lg hover:shadow-lg transition border "
           >
             {/* Left Side - Text */}
@@ -66,7 +67,7 @@ const ClientsSay = () => {
             </div>
 
             {/* Right Side - Image */}
-            <div className="-mb-3 -mt-16 -me-4 flex-shrink-0">
+            <div className="-mb-4 -mt-16 -me-4 flex-shrink-0">
               <img
                 src={client.img}
                 alt={`${client.name}'s profile`}

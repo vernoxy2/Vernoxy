@@ -43,16 +43,16 @@ const Together = () => {
   return (
     <div className="container text-center py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Let's Work Together</PrimaryHeading>
-      <p className="lg:w-2/3 mx-auto md:text-2xl leading-snug tracking-tight">
+      <p data-aos="fade-up" className="lg:w-2/3 mx-auto md:text-2xl leading-snug tracking-tight">
         From concept to growth, we’re here to design, promote, and elevate your
         brand while guiding you every step of the way.
       </p>
-      <div className="">
+      <div data-aos="fade-up" className="">
         <img src={TogetherImg} alt="" />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
         {data.map((item) => (
-          <div key={item.id} className="flex gap-6 rounded-lg p-4">
+          <div key={item.id} data-aos="fade-up" data-aos-delay={item.id * 200} className="flex gap-6 rounded-lg p-4">
             <Link to={item.Link} className="flex gap-6">
               <div className="text-5xl md:text-6xl">{item.icon}</div>
               <div className="text-start space-y-3">

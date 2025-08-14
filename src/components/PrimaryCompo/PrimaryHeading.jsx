@@ -3,7 +3,7 @@ import React from "react";
 const PrimaryHeading = ({ children, className = '' }) => {
   return (
     <div className="py-10 ">
-      <div className="container mx-auto">
+      <div data-aos="fade-up" className="container mx-auto">
         <h1 className={`text-center font-medium text-3xl md:text-6xl text-secondary ${className}`}>
           {children}
         </h1>

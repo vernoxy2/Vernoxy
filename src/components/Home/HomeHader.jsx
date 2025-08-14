@@ -6,7 +6,7 @@ const HomeHader = () => {
   return (
     <div className="py-10 md:py-20 space-y-4 md:space-y-8 container">
       <div className="text-center text-[25px] lg:text-5xl font-normal leading-tight text-secondary">
-        <h1>
+        <h1 data-aos="fade-up">
           Empowering{" "}
           <span className="font-extrabold bg-[linear-gradient(to_right,_#136DB9_16%,_#55D3E0_100%)] bg-clip-text text-transparent">
             Brands
@@ -22,16 +22,16 @@ const HomeHader = () => {
       </div>
 
       <div className="">
-        <h1 className="text-xs lg:text-xl text-center font-normal tracking-wide text-secondary">
+        <h1 data-aos="fade-up" className="text-xs lg:text-xl text-center font-normal tracking-wide text-secondary">
           Empowering brands with innovative, data-driven strategies through
-          creative solutions, <br />
+          creative solutions, <br className="hidden md:block" />
           insightful analytics, modern design, and professional digital
           workspaces.
         </h1>
       </div>
 
       <div className=" flex justify-center">
-        <div className="relative inline-block">
+        <div data-aos="zoom-in" className="relative inline-block">
           <img src={heroImg} alt="" className="w-[80%] mx-auto" />
           <img
             src={arrow}

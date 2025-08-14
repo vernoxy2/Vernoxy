@@ -7,7 +7,7 @@ import PrimaryBtn from "../PrimaryCompo/PrimaryBtn";
 const GetaQuote = () => {
   return (
     <section className="py-10">
-      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-y-20">
+      <div data-aos="zoom-in" className="container grid grid-cols-1 lg:grid-cols-2 gap-y-20">
         <div className="flex flex-col gap-y-12">
           <SecondaryHeading>
             <span className="font-black bg-gradient-to-tr from-[#1168B5] to-[#4ED5E2] bg-clip-text text-transparent">

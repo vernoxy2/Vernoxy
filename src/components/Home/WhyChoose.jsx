@@ -38,6 +38,7 @@ const WhyChoose = () => {
         {services.map((service, index) => (
           <div
             key={index}
+            data-aos="zoom-in" data-aos-delay={index * 200}
             className="flex flex-col gap-4 bg-white justify-center items-center text-center p-4 hover:shadow-lg transition"
           >
             <div className="bg-primary-gradient p-5 rounded-full text-white">{service.img}</div>

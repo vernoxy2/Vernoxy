@@ -16,7 +16,7 @@ const Goals = () => {
       {/* Content */}
       <div className="relative z-10 space-y-6 md:space-y-12">
         {/* Heading */}
-        <h1 className="mx-auto font-medium text-3xl md:text-6xl max-w-4xl text-white">
+        <h1 data-aos="fade-up" className="mx-auto font-medium text-3xl md:text-6xl max-w-4xl text-white">
           <span className="font-black bg-gradient-to-r from-[#1168B5] to-[#4ED5E2] bg-clip-text text-transparent">
             Clarify the company’s
           </span>{" "}
@@ -26,7 +26,7 @@ const Goals = () => {
         {/* Vision & Mission */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 container">
           {/* Vision */}
-          <div className="relative flex flex-col items-center group p-6">
+          <div data-aos="fade-right" className="relative flex flex-col items-center group p-6">
             <img
               src={VisionImg}
               alt="Vernoxy's vision representation"
@@ -45,7 +45,7 @@ const Goals = () => {
           </div>
 
           {/* Mission */}
-          <div className="relative flex flex-col items-center group p-6">
+          <div data-aos="fade-left" className="relative flex flex-col items-center group p-6">
             <img
               src={MissionImg}
               alt="Vernoxy's mission representation"

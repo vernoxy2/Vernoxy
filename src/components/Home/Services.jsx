@@ -18,14 +18,14 @@ const Services = () => {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 ">
         {/* Left Section */}
         <div className="flex flex-col gap-6 md:gap-10 text-secondary">
-          <h1 className="text-3xl md:text-5xl font-medium text-center lg:text-start">
+          <h1 data-aos="fade-right" className="text-3xl md:text-5xl font-medium text-center lg:text-start">
             <span className="font-black bg-gradient-to-r from-[#1168B5] to-[#4ED5E2] bg-clip-text text-transparent">
               Explore
             </span>{" "}
             Our Services
           </h1>
 
-          <p className="md:text-lg leading-snug text-gray-700 text-center lg:text-start">
+          <p data-aos="fade-right" className="md:text-lg leading-snug text-gray-700 text-center lg:text-start">
             We design clean, user-friendly digital experiences that blend
             beauty, usability, and strategic functionality.
           </p>
@@ -34,6 +34,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
+                data-aos="fade-up" data-aos-delay={index * 200}
                 className="flex justify-between items-center bg-white shadow-md rounded-full px-6 py-4 hover:shadow-lg transition"
               >
                 <div className="flex items-center gap-4">
@@ -50,7 +51,7 @@ const Services = () => {
         </div>
 
         {/* Right Image Section */}
-        <div className="relative w-full flex justify-center">
+        <div data-aos="zoom-in" className="relative w-full flex justify-center">
           <img
             src={ServicesImage}
             alt="Services"

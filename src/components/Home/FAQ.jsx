@@ -19,20 +19,21 @@ const FAQ = () => {
       </PrimaryHeading>
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-y-10">
         {/* Right Section */}
-        <div className="flex flex-col gap-8 text-secondary  justify-center">
-          <h1 className="text-5xl font-medium">Frequently Asked Questions</h1>
-          <p className="text-2xl leading-snug">
+        <div  className="flex flex-col gap-8 text-secondary  justify-center">
+          <h1 data-aos="fade-right" className="text-5xl font-medium">Frequently Asked Questions</h1>
+          <p data-aos="fade-right" className="text-2xl leading-snug">
             Find quick answers to common questions about our digital marketing
             website UI design, features, customization, responsiveness, and
             more.
           </p>
           {/* General Questions */}
-          <div className="flex flex-col gap-4">
-            <h1 className="text-3xl font-bold">General Questions</h1>
+          <div  className="flex flex-col gap-4">
+            <h1 data-aos="fade-right" className="text-3xl font-bold">General Questions</h1>
             <div className="mt-4 md:mt-6 flex flex-col gap-4">
               {data.map((service, index) => (
                 <div
                   key={index}
+                  data-aos="fade-right" data-aos-delay={index * 200}
                   className="flex justify-between items-center gap-x-12 bg-white shadow-md rounded-2xl p-5 hover:shadow-lg transition"
                 >
                   <div className="flex items-center ">
@@ -47,7 +48,7 @@ const FAQ = () => {
           </div>
         </div>
         {/* Left Section */}
-        <div>
+        <div data-aos="zoom-in">
           <img src={FAQImg} alt="" className="h-[95%] mx-auto" />
         </div>
       </div>
